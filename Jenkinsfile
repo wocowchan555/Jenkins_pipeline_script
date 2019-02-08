@@ -18,7 +18,7 @@ pipeline {
 					}
 			}
 			steps {
-				echo 'Don't know do what!'
+				echo 'Dont know do what!'
 			}
 		}
 		
@@ -30,12 +30,7 @@ pipeline {
 												}
 							}
 							stage('Integration test'){
-												agent {
-														docker {
-																reuseNode false
-																image 'ubuntu'
-														}
-												}
+
 												steps{
 													echo 'Running the integration test.....'
 												}
